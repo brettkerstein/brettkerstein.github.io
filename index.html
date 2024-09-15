@@ -106,6 +106,7 @@
             gap: 10px;
             margin-top: 20px;
         }
+        
         .skill {
             background-color: #3498db;
             color: white;
@@ -114,13 +115,29 @@
             font-size: 0.9em;
         }
         
+        ul {
+            list-style-type: disc; /* You can change to circle, square, etc. */
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+
+        /* To center the list container */
+        .centered-list {
+            display: flex;
+            justify-content: center;
+        }  
     </style>
 </head>
 <body>
 
 <header class="banner">
     <h1>Brett Kerstein</h1>
-    <p>Data Scientist | Data Enthusiast</p>
+    <p>Data Enthusiast | Results Driven | Problem Solver</p>
 </header>
 
 <nav>
@@ -154,16 +171,20 @@
     <h2>Projects</h2>
 
     <div class="project">
-        <h3>Sales Forecasting</h3>
+        <h3>Retail Sale Forecasting</h3>
         <a href="https://github.com/brettkerstein/kaggle_store_sales" target="_blank">
             <img src="../images/SARIMAX_examplephoto.png" alt="Sales Forecasting">
         </a>
         <p>This project uses SARIMAX for generating time-series forecated sales of a reatail store. Technical highlights include pandas for data manipulation and statsmodels for time series analysis.
             <br> <br>
             Professional work experience in similar contexts include:
-            <li>Retail Profit Analysis</li>
-            <li>Substituabliity and Brand Loyalty</li>
-            <li>Promotional Effectiveness</li>
+        <div class="centered-list">
+            <ul>
+                <li>Retail Profit Analysis</li>
+                <li>Substituabliity and Brand Loyalty</li>
+                <li>Promotional Effectiveness</li>
+            </ul>
+        </div>    
         </p>
     </div>
 
@@ -190,6 +211,14 @@
             <img src="../images/SportsPredictions_photo.png"  alt="Sports Predictions Photo">
         </a>
         <p>This project predicts plater and team performance and visualizes predictions and their accuracy in real-time</p>
+    </div>
+
+    <div class="project"></div>
+        <h3>Generative AI Project</h3>
+        <a href="https://github.com/brettkerstein/project3" target="_blank">
+            <img src="../images/generativeai_examplephoto.png"  alt="Generative AI Photo">
+        </a>
+        <p>This project is a placeholder for a project that will contain a project showcasing generative AI</p>
     </div>
 
 </section>
